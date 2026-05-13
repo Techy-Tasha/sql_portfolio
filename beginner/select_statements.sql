@@ -44,3 +44,32 @@ SELECT
 FROM Customers
 WHERE score > 475
 AND country = 'Germany';
+
+-- Use OR condition
+SELECT
+    first_name,
+    country
+FROM Customers
+WHERE country = 'USA'
+OR country = 'UK';
+
+-- Sort results ascending
+SELECT
+    first_name,
+    score
+FROM Customers
+ORDER BY score ASC;
+
+-- Sort results descending
+SELECT
+    first_name,
+    score
+FROM customers
+ORDER BY score DESC;
+
+-- Limit results
+SELECT TOP 2
+    first_name,
+    score
+FROM customers
+ORDER BY score  DESC;
